@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Will you go on a date with me? 💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <canvas id="particles" aria-hidden="true"></canvas>
+
+    <main class="page">
+      <section class="card" id="ask-card">
+        <div class="card__image-wrap">
+          <img
+            src="assets/cat.png"
+            alt="A cute fluffy white cat"
+            class="card__image"
+            width="200"
+            height="200"
+          />
+        </div>
+
+        <h1 class="card__title">
+          <span class="card__petal" aria-hidden="true">🌸</span>
+          Will you go on a date with me?
+          <span class="card__petal" aria-hidden="true">🌸</span>
+        </h1>
+
+        <div class="card__actions" id="actions">
+          <button type="button" class="btn btn--yes" id="btn-yes">
+            YES <span aria-hidden="true">💕</span>
+          </button>
+          <button type="button" class="btn btn--no" id="btn-no">
+            no... <span aria-hidden="true">😢</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="card card--success hidden" id="success-card">
+        <div class="success__emoji" aria-hidden="true">🥰✨🐱</div>
+        <h1 class="card__title card__title--success">Yay! See you soon!</h1>
+        <p class="success__message">
+          You just made my whole day. I can't wait for our date!
+        </p>
+      </section>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
